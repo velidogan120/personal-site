@@ -1,1 +1,70 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+body {
+  font-family: "Inter", sans-serif;
+  @apply text-gray-500 font-normal;
+  .container {
+    @apply px-10 mx-auto mb-10;
+  }
+  .header-links {
+    a {
+      @apply text-gray-500;
+    }
+  }
+}
+
+.button {
+  @apply border border-indigo-600 text-indigo-600 rounded-md font-medium hover:bg-indigo-600 hover:text-white transition text-lg;
+  &.icon {
+    @apply text-sm px-4 py-2 rounded-sm;
+  }
+}
+
+.h2 {
+  @apply text-5xl leading-none font-semibold text-gray-800;
+}
+
+.h3 {
+  @apply text-3xl leading-none font-medium text-indigo-700;
+}
+
+hr {
+  @apply text-violet-300 border;
+}
+
+.card {
+  @apply overflow-hidden transition-all duration-300 hover:shadow-xl;
+}
+
+.card-image {
+  @apply w-full h-48 object-cover;
+}
+
+.card-body {
+  @apply p-6;
+}
+
+.card-text {
+  @apply text-sm mb-4;
+}
+
+.card-tags {
+  @apply flex flex-wrap gap-2 mb-4;
+}
+
+.card-links {
+  @apply flex justify-between text-base font-medium;
+}
+
+.card-link {
+  @apply underline text-indigo-800 hover:cursor-pointer;
+}
+
+footer {
+  .container {
+    @apply mb-0;
+  }
+}
+.footer-links {
+  @apply text-lg;
+}
