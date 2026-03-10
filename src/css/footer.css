@@ -1,0 +1,10 @@
+@reference "../index.css";
+
+footer {
+  .container {
+    @apply mb-0;
+  }
+}
+.footer-links {
+  @apply text-lg;
+}

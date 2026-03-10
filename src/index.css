@@ -1,8 +1,9 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+
 body {
   font-family: "Inter", sans-serif;
-  @apply text-gray-500 font-normal;
+  @apply text-gray-500 font-normal bg-white;
   .container {
     @apply px-10 mx-auto mb-10;
   }
@@ -11,17 +12,37 @@ body {
       @apply text-gray-500;
     }
   }
+  @variant dark {
+    @apply bg-slate-900 text-gray-300;
+    .header-links {
+      a {
+        @apply text-gray-300;
+      }
+    }
+  }
 }
 
 .button {
-  @apply border border-indigo-600 text-indigo-600 rounded-md font-medium hover:bg-indigo-600 hover:text-white transition text-lg;
+  @apply border border-indigo-600 text-indigo-600 rounded-md font-medium  transition text-lg;
+  @variant hover {
+    @apply bg-indigo-600 text-white;
+  }
   &.icon {
     @apply text-sm px-4 py-2 rounded-sm;
+  }
+  @variant dark {
+    @apply border-indigo-800 bg-indigo-800 text-white;
+    @variant hover {
+      @apply text-indigo-800 bg-white border-indigo-800;
+    }
   }
 }
 
 .h2 {
   @apply text-5xl leading-none font-semibold text-gray-800;
+  @variant dark {
+    @apply text-gray-300;
+  }
 }
 
 .h3 {
@@ -58,13 +79,7 @@ hr {
 
 .card-link {
   @apply underline text-indigo-800 hover:cursor-pointer;
-}
-
-footer {
-  .container {
-    @apply mb-0;
+  @variant dark {
+    @apply text-indigo-300;
   }
-}
-.footer-links {
-  @apply text-lg;
 }

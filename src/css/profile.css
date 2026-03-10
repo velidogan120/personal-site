@@ -1,0 +1,17 @@
+@reference "../index.css";
+.profile {
+  dt {
+    @apply text-lg font-semibold text-zinc-950;
+  }
+  dd {
+    @apply text-lg text-zinc-950 col-span-2;
+  }
+  @variant dark {
+    dt {
+      @apply text-zinc-50;
+    }
+    dd {
+      @apply text-zinc-50;
+    }
+  }
+}

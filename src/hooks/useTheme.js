@@ -1,20 +1,27 @@
-import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleDark } from "../lib/store/slices/themeSlice";
-
+import { toggleTheme } from "../lib/store/slices/themeSlice";
+import { useLocalStorage } from "./useLocalStorage";
+import { useEffect } from "react";
 const useTheme = () => {
   const dispatch = useDispatch();
-  const { dark } = useSelector((state) => state.theme);
+  const { theme } = useSelector((state) => state.theme);
+
+  const [, setTheme] = useLocalStorage({
+    key: "theme",
+    defaultValue: theme,
+  });
 
   useEffect(() => {
-    document.documentElement.classList.toggle("dark", dark === "dark");
-    localStorage.setItem("theme", dark);
-  }, [dark]);
+    document.documentElement.classList.remove("light", "dark");
+    document.documentElement.classList.add(theme);
+
+    setTheme(theme);
+  }, [theme, setTheme]);
 
   const handleToggleTheme = () => {
-    dispatch(toggleDark());
+    dispatch(toggleTheme());
   };
-  return { handleToggleTheme, dark };
+  return { handleToggleTheme, theme };
 };
 
-export default useTheme;
+export { useTheme };

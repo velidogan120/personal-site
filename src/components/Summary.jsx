@@ -1,4 +1,7 @@
+import { useLanguage } from "../hooks/useLanguage";
+
 const Summary = () => {
+  const { t } = useLanguage();
   return (
     <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10">
       <div className="order-2 lg:order-1">
@@ -6,18 +9,14 @@ const Summary = () => {
           <div className="bg-indigo-800 h-0.5 w-15 md:w-30"></div>
           <h4 className="text-indigo-800">VELİ DOĞAN</h4>
         </div>
-        <h1 className="font-bold text-7xl text-gray-800 my-10">
-          Creative thinker Minimalism lover
+        <h1 className="font-bold text-7xl text-gray-800 my-10 dark:text-gray-50">
+          {t("titles.h1.summary")}
         </h1>
-        <p className="my-10">
-          Hi, I’m Almila. I’m a full-stack developer. If you are looking for a
-          Developer who to craft solid and scalable frontend products with great
-          user experiences. Let’s shake hands with me.
-        </p>
+        <p className="my-10">{t("summary.paragraph")}</p>
         <ul className="flex gap-4">
           <li>
             <a href="#" className="button px-8 py-3 ">
-              Hire Me
+              {t("buttons.hire-me")}
             </a>
           </li>
           <li>

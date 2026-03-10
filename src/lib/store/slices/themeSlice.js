@@ -1,21 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  dark: localStorage.getItem("theme") === "dark" ? "dark" : "light",
+  theme: JSON.parse(localStorage.getItem("theme")) || "light",
 };
 
 export const themeSlice = createSlice({
   name: "theme",
   initialState,
   reducers: {
-    toggleDark: (state) => {
-      state.dark = state.dark === "dark" ? "light" : "dark";
-      localStorage.setItem("theme", state.dark);
+    toggleTheme: (state) => {
+      state.theme = state.theme === "dark" ? "light" : "dark";
     },
   },
 });
 
 // eslint-disable-next-line no-empty-pattern
-export const { toggleDark } = themeSlice.actions;
+export const { toggleTheme } = themeSlice.actions;
 
 export default themeSlice.reducer;

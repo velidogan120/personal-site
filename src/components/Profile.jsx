@@ -1,38 +1,36 @@
-import React from "react";
+import "../css/profile.css";
+import { useLanguage } from "../hooks/useLanguage";
 
 const Profile = () => {
+  const { t } = useLanguage();
   return (
     <div className="container">
       <hr />
-      <h2 className="h2 my-10">Profile</h2>
+      <h2 className="h2 my-10">{t("titles.h2.profile")}</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 mb-10">
-        <div>
-          <h3 className="h3">Profile</h3>
+        <div className="profile">
+          <h3 className="h3">{t("titles.h3.profile")}</h3>
           <dl class="divide-y divide-white/10 mt-5">
             <div class="grid grid-cols-3 gap-4">
-              <dt class="text-lg font-semibold text-zinc-950">Doğum tarihi</dt>
-              <dd class="text-lg text-zinc-950 col-span-2">24.03.1996</dd>
+              <dt>{t("profile.profile.birth-date-label")}</dt>
+              <dd>{t("profile.profile.birth-date-value")}</dd>
             </div>
             <div class="grid grid-cols-3 gap-4">
-              <dt class="text-lg font-semibold text-zinc-950">İkamet Şehri</dt>
-              <dd class="text-lg text-zinc-950 col-span-2">Ankara</dd>
+              <dt>{t("profile.profile.city-label")}</dt>
+              <dd>{t("profile.profile.city-value")}</dd>
             </div>
             <div class="grid grid-cols-3 gap-4">
-              <dt class="text-lg font-semibold text-zinc-950">Eğitim Durumu</dt>
-              <dd class="text-lg text-zinc-950 col-span-2">
-                Hacettepe Ünv. Biyoloji Lisans, 2016
-              </dd>
+              <dt>{t("profile.profile.education-label")}</dt>
+              <dd>{t("profile.profile.education-value")}</dd>
             </div>
             <div class="grid grid-cols-3 gap-4">
-              <dt class="text-lg font-semibold text-zinc-950">
-                Tercih Ettiği Rol
-              </dt>
-              <dd class="text-lg text-zinc-950 col-span-2">Frontend, UI</dd>
+              <dt>{t("profile.profile.role")}</dt>
+              <dd>{t("profile.profile.role-value")}</dd>
             </div>
           </dl>
         </div>
         <div className="xl:col-span-2">
-          <h3 className="h3">About Me</h3>
+          <h3 className="h3">{t("titles.h3.about-me")}</h3>
           <p className="my-5">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
             aut, odit laborum aliquam voluptatum nisi mollitia. Mnima accusamus

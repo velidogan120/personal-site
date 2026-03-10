@@ -1,22 +1,35 @@
-import useTheme from "../hooks/useTheme";
-
+import { useTheme } from "../hooks/useTheme";
+import { useLanguage } from "../hooks/useLanguage";
+import "../css/header.css";
+import allLanguages from "../lib/languages.json";
 const Header = () => {
-  const { handleToggleTheme } = useTheme();
+  const { theme, handleToggleTheme } = useTheme();
+  const { t, language, handleToggleLanguage } = useLanguage();
   return (
     <header className="container">
       <div className="flex items-center gap-2 text-sm font-medium h-15 justify-end text-gray-800 dark:text-gray-300">
-        <button
-          className="w-12 h-6 bg-indigo-700 rounded-full relative"
-          onClick={handleToggleTheme}
-        >
-          <span className="absolute right-1 top-1 w-4 h-4 bg-amber-200 rounded-full"></span>
+        <button className="button-icon" onClick={handleToggleTheme}>
+          <span className="button-circle"></span>
         </button>
-        <span>DARK MODE</span>
+        <span className="w-22 text-end">
+          {theme === "dark" ? "DARK" : "LIGHT"} MODE
+        </span>
         <span>|</span>
-        <button className="text-sm font-bold">
-          <span className="text-indigo-800">TÜRKÇE</span>
-          'YE GEÇ
-        </button>
+        <select
+          class="appearance-none bg-transparent text-xs font-bold text-indigo-700 tracking-widest uppercase cursor-pointer focus:outline-none pr-4"
+          value={language}
+          onChange={(e) => handleToggleLanguage(e.target.value)}
+        >
+          {Object.values(allLanguages.language).map((lang) => (
+            <option
+              className="bg-white text-gray-700"
+              key={lang.code}
+              value={lang.code}
+            >
+              {lang.title}
+            </option>
+          ))}
+        </select>
       </div>
       <div className="w-full py-4 flex items-center justify-between">
         <div className="flex items-center gap-4">
@@ -28,13 +41,13 @@ const Header = () => {
         <div className="header-links flex items-center gap-8">
           <nav className="flex gap-6 font-medium">
             <a href="#" className="hover:text-indigo-800">
-              Skills
+              {t("headers.skills")}
             </a>
             <a href="#" className="hover:text-indigo-800">
-              Projects
+              {t("headers.projects")}
             </a>
           </nav>
-          <button className="button px-8 py-3 ">Hire me</button>
+          <button className="button px-8 py-3">{t("headers.hire-me")}</button>
         </div>
       </div>
     </header>

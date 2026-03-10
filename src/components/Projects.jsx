@@ -1,7 +1,10 @@
+import { useLanguage } from "../hooks/useLanguage";
+
 const Projects = () => {
+  const { t } = useLanguage();
   return (
     <div className="container">
-      <h2 className="h2 my-10">Projects</h2>
+      <h2 className="h2 my-10">{t("projects.title")}</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-10 mb-10">
         <div className="card">
           <div className="card-body">

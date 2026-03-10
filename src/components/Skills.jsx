@@ -1,7 +1,10 @@
+import { useLanguage } from "../hooks/useLanguage";
+
 const Skills = () => {
+  const { t } = useLanguage();
   return (
     <div className="container mt-30">
-      <h2 className="h2 my-10">Skills</h2>
+      <h2 className="h2 my-10">{t("titles.h2.skills")}</h2>
       <div className="grid gap-10 md:gap-20 xl:gap-x-50 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <article>
           <h3 className="h3">JavaScript</h3>

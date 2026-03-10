@@ -1,0 +1,13 @@
+@reference "../index.css";
+.button-icon {
+  @apply w-12 h-6 bg-indigo-700 rounded-full relative;
+  .button-circle {
+    @apply absolute right-1 top-1 w-4 h-4 bg-amber-200 rounded-full;
+  }
+  @variant dark {
+    @apply w-12 h-6 bg-gray-500 rounded-full relative;
+    .button-circle {
+      @apply absolute left-1 top-1 w-4 h-4 bg-amber-200 rounded-full;
+    }
+  }
+}

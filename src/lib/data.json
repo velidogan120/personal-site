@@ -1,0 +1,156 @@
+{
+  "en": {
+    "title": "Tranlate to English",
+    "titles": {
+      "h1": {
+        "summary": "Creative thinker Minimalism lover"
+      },
+      "h2": {
+        "skills": "Skills",
+        "profile": "Profile",
+        "projects": "Projects"
+      },
+      "h3": {
+        "profile": "Profile",
+        "about-me": "About Me"
+      }
+    },
+    "headers": {
+      "skills": "Skills",
+      "projects": "Projects",
+      "hire-me": "Hire Me"
+    },
+    "summary": {
+      "paragraph": "Hi, I’m Veli. I’m a full-stack developer. If you are looking for a developer to craft solid and scalable frontend products with great user experiences, let’s shake hands."
+    },
+    "buttons": {
+      "hire-me": "Hire Me"
+    },
+    "skills": {
+      "javascript": {
+        "description": "I build interactive and maintainable interfaces with modern JavaScript."
+      },
+      "react": {
+        "description": "I develop reusable, scalable component-based applications using React."
+      },
+      "node": {
+        "description": "I create fast and reliable backend services and REST APIs with Node.js."
+      }
+    },
+    "profile": {
+      "profile": {
+        "title": "Profile",
+        "birth-date-label": "Date of Birth",
+        "birth-date-value": "01.05.1998",
+        "city-label": "City of Residence",
+        "city-value": "Bursa",
+        "education-label": "Education",
+        "education-value": "Namık Kemal University, Computer Engineering, Bachelor's Degree, 2025",
+        "role": "Preferred Role",
+        "role-value": "Frontend, UI"
+      },
+      "about": {
+        "title": "About Me",
+        "paragraph": "I am a full-stack developer who values clean architecture, performance, and user-centered design."
+      }
+    },
+    "projects": {
+      "title": "Projects",
+      "project1": {
+        "name": "Project 1",
+        "description": "Description of Project 1"
+      },
+      "project2": {
+        "name": "Project 2",
+        "description": "Description of Project 2"
+      },
+      "project3": {
+        "name": "Project 3",
+        "description": "Description of Project 3"
+      }
+    },
+    "footer": {
+      "paragraph": "Let’s work together on your next product.",
+      "links": {
+        "personal-blog": "Personal Blog"
+      }
+    }
+  },
+  "tr": {
+    "title": "TÜRKÇE'YE GEÇ",
+    "titles": {
+      "h1": {
+        "summary": "Yaratıcı düşünen Minimalizm tutkunu"
+      },
+      "h2": {
+        "skills": "Yetenekler",
+        "profile": "Profil",
+        "projects": "Projeler"
+      },
+      "h3": {
+        "profile": "Profil",
+        "about-me": "Hakkımda"
+      }
+    },
+    "headers": {
+      "skills": "Yetenekler",
+      "projects": "Projeler",
+      "hire-me": "Beni İşe Al"
+    },
+    "summary": {
+      "paragraph": "Merhaba, ben Veli. Ben bir full-stack geliştiriciyim. Güçlü ve ölçeklenebilir frontend ürünlerini harika kullanıcı deneyimiyle geliştirecek bir geliştirici arıyorsanız, tanışalım."
+    },
+    "buttons": {
+      "hire-me": "Beni İşe Al"
+    },
+    "skills": {
+      "javascript": {
+        "description": "Modern JavaScript ile etkileşimli ve sürdürülebilir arayüzler geliştiririm."
+      },
+      "react": {
+        "description": "React kullanarak yeniden kullanılabilir, ölçeklenebilir bileşen tabanlı uygulamalar geliştiririm."
+      },
+      "node": {
+        "description": "Node.js ile hızlı ve güvenilir backend servisleri ve REST API'ler geliştiririm."
+      }
+    },
+    "profile": {
+      "profile": {
+        "title": "Profil",
+        "birth-date-label": "Doğum Tarihi",
+        "birth-date-value": "01.05.1998",
+        "city-label": "İkamet Şehri",
+        "city-value": "Bursa",
+        "education-label": "Eğitim",
+        "education-value": "Namık Kemal Üniversitesi, Bilgisayar Mühendisliği, Lisans, 2025",
+        "role": "Tercih Ettiği Rol",
+        "role-value": "Ön Uç Geliştirme, UI"
+      },
+      "about": {
+        "title": "Hakkımda",
+        "paragraph": "Temiz mimariyi, performansı ve kullanıcı odaklı tasarımı önemseyen bir full-stack geliştiriciyim."
+      }
+    },
+    "projects": {
+      "title": "Projeler",
+      "project1": {
+        "name": "Proje 1",
+        "description": "Description of Proje 1"
+      },
+      "project2": {
+        "name": "Proje 2",
+        "description": "Description of Proje 2"
+      },
+      "project3": {
+        "name": "Proje 3",
+        "description": "Description of Proje 3"
+      }
+    },
+    "footer": {
+      "paragraph": "Bir sonraki ürününüz için birlikte çalışalım.",
+      "links": {
+        "personal-blog": "Kişisel Blog"
+      }
+    }
+  }
+}
