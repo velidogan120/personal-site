@@ -31,12 +31,7 @@ const Profile = () => {
         </div>
         <div className="xl:col-span-2">
           <h3 className="h3">{t("titles.h3.about-me")}</h3>
-          <p className="my-5">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
-            aut, odit laborum aliquam voluptatum nisi mollitia. Mnima accusamus
-            ratione soluta aperiam sit voluptate? Dicta quod deserunt quam
-            temporibus cumque magnam!
-          </p>
+          <p className="my-5">{t("profile.about.paragraph")}</p>
         </div>
       </div>
       <hr />

@@ -1,9 +1,12 @@
 import ReduxProvider from "./ReduxProvider";
+import QueryProvider from "./QueryProvider";
 
 const Providers = ({ children }) => {
   return (
     <div>
-      <ReduxProvider>{children}</ReduxProvider>
+      <ReduxProvider>
+        <QueryProvider>{children}</QueryProvider>
+      </ReduxProvider>
     </div>
   );
 };

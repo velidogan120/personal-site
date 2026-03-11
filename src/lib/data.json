@@ -51,7 +51,7 @@
       },
       "about": {
         "title": "About Me",
-        "paragraph": "I am a full-stack developer who values clean architecture, performance, and user-centered design."
+        "paragraph": "Hello, I am Veli, living in Orhangazi, Bursa. I graduated from Namık Kemal University, Tekirdağ. Currently, I have learned HTML & CSS (Flexbox, Grid, SCSS, Bootstrap, TailwindCSS), JavaScript (AJAX, XMLHttpRequest, Callbacks, Async/Await), TypeScript, ReactJS (Redux Toolkit, ContextAPI, React Router Dom), NextJS. I plan to learn Java and Spring to improve my backend skills and achieve my Fullstack Developer goal. My latest project: Kanban: https://kanban-nextjs-lemon.vercel.app; React Spinners: https://lnkd.in/dkSpKNZx. Technologies used: SCSS, Redux Toolkit, Formik & Yup, React DnD Kit, Socket.IO, Firebase, AntDesign, NextJS (App-Router / TypeScript)."
       }
     },
     "projects": {
@@ -128,7 +128,7 @@
       },
       "about": {
         "title": "Hakkımda",
-        "paragraph": "Temiz mimariyi, performansı ve kullanıcı odaklı tasarımı önemseyen bir full-stack geliştiriciyim."
+        "paragraph": "Merhaba, ben Veli. Bursa, Orhangazi’de yaşıyorum. Tekirdağ Namık Kemal Üniversitesi Bilgisayar Mühendisliği bölümünden 19.03.2025 tarihinde mezun oldum. Hedefim Fullstack Developer olmak. Şu anda HTML & CSS (Flexbox, Grid, SCSS, Bootstrap, TailwindCSS), JavaScript (AJAX, XMLHttpRequest, Callback, Async-Await), TypeScript, ReactJS (Redux Toolkit, ContextAPI, React Router Dom), NextJS öğrendim. Java ve Spring öğrenerek backend bilgimi geliştirecek ve Fullstack Developer hedefime ulaşacağım. En güncel projem Kanban: https://kanban-nextjs-lemon.vercel.app; React Spinners: https://lnkd.in/dkSpKNZx. Kullanılan teknolojiler: SCSS, Redux Toolkit, Formik & Yup, React DnD Kit, Socket.IO, Firebase, AntDesign, NextJS (App-Router / TypeScript)."
       }
     },
     "projects": {

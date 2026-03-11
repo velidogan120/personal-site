@@ -40,14 +40,16 @@ const Header = () => {
 
         <div className="header-links flex items-center gap-8">
           <nav className="flex gap-6 font-medium">
-            <a href="#" className="hover:text-indigo-800">
+            <a href="#skills" className="hover:text-indigo-800">
               {t("headers.skills")}
             </a>
-            <a href="#" className="hover:text-indigo-800">
+            <a href="#projects" className="hover:text-indigo-800">
               {t("headers.projects")}
             </a>
           </nav>
-          <button className="button px-8 py-3">{t("headers.hire-me")}</button>
+          <a href="mailto:velidogan120@gmail.com" target="_blank" className="button px-8 py-3">
+            {t("headers.hire-me")}
+          </a>
         </div>
       </div>
     </header>

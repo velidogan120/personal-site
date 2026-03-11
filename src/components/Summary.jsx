@@ -15,17 +15,28 @@ const Summary = () => {
         <p className="my-10">{t("summary.paragraph")}</p>
         <ul className="flex gap-4">
           <li>
-            <a href="#" className="button px-8 py-3 ">
+            <a
+              href="mailto:velidogan120@gmail.com"
+              className="button px-8 py-3 "
+            >
               {t("buttons.hire-me")}
             </a>
           </li>
           <li>
-            <a href="#" className="button px-8 py-3 ">
+            <a
+              href="https://www.linkedin.com/in/veli-doğan-6a2887a2/"
+              className="button px-8 py-3 "
+              target="_blank"
+            >
               LinkedIn
             </a>
           </li>
           <li>
-            <a href="#" className="button px-8 py-3 ">
+            <a
+              href="https://github.com/velidogan120"
+              className="button px-8 py-3 "
+              target="_blank"
+            >
               GitHub
             </a>
           </li>

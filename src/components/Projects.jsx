@@ -1,86 +1,69 @@
 import { useLanguage } from "../hooks/useLanguage";
+import { useProjects } from "../lib/services/mockApiQuery";
 
 const Projects = () => {
   const { t } = useLanguage();
+  const { data: projects = [], isLoading, isError, error } = useProjects();
+  console.log("🚀 ~ Projects ~ projects:", projects);
   return (
-    <div className="container">
+    <div id="projects" className="container">
       <h2 className="h2 my-10">{t("projects.title")}</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-10 mb-10">
-        <div className="card">
-          <div className="card-body">
-            <img src="/project.jpg" className="card-image" />
-            <h3 className="h3 my-4">Workintech</h3>
+        {isLoading ? (
+          <p>Loading...</p>
+        ) : isError ? (
+          <p>Error: {error?.message}</p>
+        ) : (
+          projects
+            .filter(
+              (project) =>
+                project.homepage && project.homepage.includes("vercel.app"),
+            )
+            .map((project) => (
+              <article key={project.id}>
+                <div className="card">
+                  <div className="card-body h-100 flex flex-col">
+                    <img
+                      src={project.owner.avatar_url}
+                      className="card-image"
+                    />
+                    <h3 className="h3 my-4">{project.name}</h3>
 
-            <p className="card-text">
-              A simple, customizable, minimal setup cookie plugin that allows
-              your users to select which cookies to accept or decline. This was
-              created with vanilla JS, SCSS and Parcel Bundler and is available
-              as a NPM package and the git repository makes any type of
-              customization to code and themes possible.
-            </p>
+                    <p className="card-text">{project.description}</p>
 
-            <div className="card-tags">
-              <span className="button icon">react</span>
-              <span className="button icon">redux</span>
-              <span className="button icon">axios</span>
-            </div>
+                    <div className="card-tags">
+                      {project.topics?.map((tag) => (
+                        <span key={tag} className="button icon">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
 
-            <div className="card-links">
-              <a className="card-link">Github</a>
-              <a className="card-link">View Site</a>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-body">
-            <img src="/project.jpg" className="card-image" />
-            <h3 className="h3 my-4">Random Jokes</h3>
-
-            <p className="card-text">
-              A simple, customizable, minimal setup cookie plugin that allows
-              your users to select which cookies to accept or decline. This was
-              created with vanilla JS, SCSS and Parcel Bundler and is available
-              as a NPM package and the git repository makes any type of
-              customization to code and themes possible.
-            </p>
-
-            <div className="card-tags">
-              <span className="button icon">react</span>
-              <span className="button icon">redux</span>
-              <span className="button icon">axios</span>
-            </div>
-
-            <div className="card-links">
-              <a className="card-link">Github</a>
-              <a className="card-link">View Site</a>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-body">
-            <img src="/project.jpg" className="card-image" />
-            <h3 className="h3 my-4">Journey</h3>
-
-            <p className="card-text">
-              A simple, customizable, minimal setup cookie plugin that allows
-              your users to select which cookies to accept or decline. This was
-              created with vanilla JS, SCSS and Parcel Bundler and is available
-              as a NPM package and the git repository makes any type of
-              customization to code and themes possible.
-            </p>
-
-            <div className="card-tags">
-              <span className="button icon">react</span>
-              <span className="button icon">redux</span>
-              <span className="button icon">axios</span>
-            </div>
-
-            <div className="card-links">
-              <a className="card-link">Github</a>
-              <a className="card-link">View Site</a>
-            </div>
-          </div>
-        </div>
+                    <div className="card-links mt-auto">
+                      {project.html_url && (
+                        <a
+                          href={project.html_url}
+                          className="card-link"
+                          target="_blank"
+                        >
+                          Github
+                        </a>
+                      )}
+                      {project.homepage && (
+                        <a
+                          href={project.homepage}
+                          className="card-link"
+                          target="_blank"
+                        >
+                          View Site
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </article>
+            ))
+        )}
       </div>
     </div>
   );
