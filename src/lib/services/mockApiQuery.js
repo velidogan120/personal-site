@@ -17,7 +17,9 @@ export const useProjects = (language) => {
   return useQuery({
     queryKey: ["projects", language],
     queryFn: async () => {
-      const { data } = await getGitApi.get("");
+      const { data } = await getGitApi.get("/projects", {
+        params: { lang: language },
+      });
       return data;
     },
   });
