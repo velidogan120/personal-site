@@ -3,33 +3,34 @@ const Project = ({ project }) => {
     <div>
       <article key={project.id}>
         <div className="card">
-          <div className="card-body h-100 flex flex-col">
-            <img src={project.owner.avatar_url} className="card-image" />
-            <h3 className="h3 my-4">{project.name}</h3>
+          <div className="card-body h-130 flex flex-col">
+            <img src={project.image} className="card-image" />
+            <h3 className="h3 my-4">{project.title}</h3>
 
             <p className="card-text">{project.description}</p>
 
             <div className="card-tags">
-              {project.topics?.map((tag) => (
-                <span key={tag} className="button icon">
-                  {tag}
-                </span>
-              ))}
+              {project.tags &&
+                project.tags.map((tag) => (
+                  <span key={tag} className="button icon">
+                    {tag}
+                  </span>
+                ))}
             </div>
 
             <div className="card-links mt-auto">
-              {project.html_url && (
+              {project.links && (
                 <a
-                  href={project.html_url}
+                  href={project.links.github}
                   className="card-link"
                   target="_blank"
                 >
                   Github
                 </a>
               )}
-              {project.homepage && (
+              {project.links && (
                 <a
-                  href={project.homepage}
+                  href={project.links.view_site}
                   className="card-link"
                   target="_blank"
                 >

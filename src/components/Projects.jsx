@@ -5,6 +5,7 @@ const Projects = () => {
   const { t } = useLanguage();
   const { data: projects = [], isLoading, isError, error } = useProjects();
   console.log("🚀 ~ Projects ~ projects:", projects);
+
   return (
     <div id="projects" className="container">
       <h2 className="h2 my-10">{t("projects.title")}</h2>
@@ -14,12 +15,9 @@ const Projects = () => {
         ) : isError ? (
           <p>Error: {error?.message}</p>
         ) : (
-          projects
-            .filter(
-              (project) =>
-                project.homepage && project.homepage.includes("vercel.app"),
-            )
-            .map((project) => <Project key={project.id} project={project} />)
+          projects.map((project) => (
+            <Project key={project.id} project={project} />
+          ))
         )}
       </div>
     </div>
