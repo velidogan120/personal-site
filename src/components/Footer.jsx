@@ -12,25 +12,36 @@ const Footer = () => {
           </p>
           <a className="flex gap-2 items-center">
             <FaHandPointRight />
-            <span className="text-rose-700 underline font-medium">
+            <a href="mailto:velidogan120@gmail.com" className="text-rose-700 underline font-medium">
               velidogan120@gmail.com
-            </span>
+            </a>
           </a>
         </div>
         <div className="footer-links self-end justify-self-start lg:justify-self-end">
           <ul className="flex gap-6">
             <li>
-              <a href="#" className="text-gray-950 dark:text-gray-300">
+              <a
+                href="https://velidogan120.github.io/PersonalSite-SCSS/"
+                className="text-gray-950 dark:text-gray-300"
+              >
                 {t("footer.links.personal-blog")}
               </a>
             </li>
             <li>
-              <a href="#" className="text-emerald-600">
+              <a
+                href="https://github.com/velidogan120"
+                target="_blank"
+                className="text-emerald-600"
+              >
                 Github
               </a>
             </li>
             <li>
-              <a href="#" className="text-sky-600">
+              <a
+                href="https://www.linkedin.com/in/veli-doğan-6a2887a2/"
+                target="_blank"
+                className="text-sky-600"
+              >
                 Linkedin
               </a>
             </li>
