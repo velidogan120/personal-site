@@ -1,6 +1,6 @@
 import { useLanguage } from "../hooks/useLanguage";
 import { useSkills } from "../lib/services/mockApiQuery";
-
+import Skill from "./Skill";
 const Skills = () => {
   const { t, language } = useLanguage();
   const { data: skills = [], isLoading, isError } = useSkills(language);
@@ -13,12 +13,7 @@ const Skills = () => {
         ) : isError ? (
           <p>Error: {skills.error.message}</p>
         ) : (
-          skills.map((skill) => (
-            <article key={skill.id}>
-              <h3 className="h3">{skill.title}</h3>
-              <p className="text-xs my-7">{skill.description}</p>
-            </article>
-          ))
+          skills.map((skill) => <Skill key={skill.id} skill={skill} />)
         )}
       </div>
     </div>
