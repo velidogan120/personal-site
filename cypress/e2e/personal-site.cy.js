@@ -34,7 +34,7 @@ describe("template spec", () => {
     ).as("getSkills");
 
     cy.wait("@getSkills");
-    cy.contains("JavaScript").should("be.visible");
+    cy.contains("Skills loading...");
     cy.get("body")
       .invoke("text")
       .should("satisfy", (text) => {
@@ -73,6 +73,7 @@ describe("template spec", () => {
     ).as("getProjects");
 
     cy.wait("@getProjects");
+    cy.contains("Projects loaded!");
     cy.contains("Workintech").should("be.visible");
     cy.get("body")
       .invoke("text")

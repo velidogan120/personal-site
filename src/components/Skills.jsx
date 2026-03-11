@@ -1,9 +1,29 @@
+import { toast } from "react-toastify";
 import { useLanguage } from "../hooks/useLanguage";
 import { useSkills } from "../lib/services/mockApiQuery";
 import Skill from "./Skill";
+import { useEffect, useRef } from "react";
 const Skills = () => {
   const { t, language } = useLanguage();
   const { data: skills = [], isLoading, isError } = useSkills(language);
+   const toastId = useRef(null);
+
+  useEffect(() => {
+    if (isLoading) {
+      if (!toastId.current) {
+        toastId.current = toast.loading("Skills loading...");
+      }
+    } else {
+      if (toastId.current) {
+        toast.dismiss(toastId.current);
+        toastId.current = null;
+      }
+    }
+
+    if (isError) {
+      toast.error("Failed to load skills!");
+    }
+  }, [isLoading, isError]);
   return (
     <div className="container mt-30" id="skills">
       <h2 className="h2 my-10">{t("titles.h2.skills")}</h2>

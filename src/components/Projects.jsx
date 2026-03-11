@@ -1,6 +1,7 @@
 import { useLanguage } from "../hooks/useLanguage";
 import { useProjects } from "../lib/services/mockApiQuery";
 import Project from "./Project";
+import { toast } from "react-toastify";
 const Projects = () => {
   const { t, language } = useLanguage();
   const {
@@ -23,6 +24,7 @@ const Projects = () => {
           ))
         )}
       </div>
+      {projects.length > 0 && toast("Projects loaded!", { type: "success" })}
     </div>
   );
 };
