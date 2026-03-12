@@ -11,8 +11,8 @@ const Header = () => {
         <button className="button-icon" onClick={handleToggleTheme}>
           <span className="button-circle"></span>
         </button>
-        <span className="w-22 text-end">
-          {theme === "dark" ? "DARK" : "LIGHT"} MODE
+        <span className="w-30 text-start">
+          {theme === "dark" ? t("modes.dark") : t("modes.light")}
         </span>
         <span>|</span>
         <select
@@ -47,7 +47,11 @@ const Header = () => {
               {t("headers.projects")}
             </a>
           </nav>
-          <a href="mailto:velidogan120@gmail.com" target="_blank" className="button px-8 py-3">
+          <a
+            href="mailto:velidogan120@gmail.com"
+            target="_blank"
+            className="button px-8 py-3"
+          >
             {t("headers.hire-me")}
           </a>
         </div>

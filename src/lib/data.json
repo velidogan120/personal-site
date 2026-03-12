@@ -1,6 +1,10 @@
 {
   "en": {
     "title": "Tranlate to English",
+    "modes": {
+      "light": "LIGHT MODE",
+      "dark": "DARK MODE"
+    },
     "titles": {
       "h1": {
         "summary": "Creative thinker Minimalism lover"
@@ -78,6 +82,10 @@
   },
   "tr": {
     "title": "TÜRKÇE'YE GEÇ",
+    "modes": {
+      "light": "AÇIK MOD",
+      "dark": "KARANLIK MOD"
+    },
     "titles": {
       "h1": {
         "summary": "Yaratıcı düşünen Minimalizm tutkunu"
