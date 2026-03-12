@@ -17,7 +17,7 @@ const Summary = () => {
           <li>
             <a
               href="mailto:velidogan120@gmail.com"
-              className="button px-8 py-3 "
+              className="button px-7 py-3 "
             >
               {t("buttons.hire-me")}
             </a>

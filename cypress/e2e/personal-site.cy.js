@@ -58,13 +58,13 @@ describe("template spec", () => {
         body: [
           {
             id: 1,
-            title: "Workintech",
+            title: "E-Commerce",
             description:
-              "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+              "A simple and modern e-commerce interface example. It includes essential UI components such as product listing, product detail views, and basic user interactions. The layout is built using responsive design principles to ensure compatibility across different screen sizes. Developed with HTML, CSS, and Bootstrap as a customizable front-end project.",
             tags: ["react", "redux", "axios"],
             links: {
               github: "https://github.com/velidogan120",
-              view_site: "https://workintech-example.com",
+              view_site: "https://velidogan120.github.io/E-commerce/",
             },
             image: "./1.png",
           },
@@ -74,16 +74,16 @@ describe("template spec", () => {
 
     cy.wait("@getProjects");
     cy.contains("Projects loaded!");
-    cy.contains("Workintech").should("be.visible");
+    cy.contains("E-Commerce").should("be.visible");
     cy.get("body")
       .invoke("text")
       .should("satisfy", (text) => {
         return (
           text.includes(
-            "Basit, özelleştirilebilir ve minimal kurulum gerektiren bir çerez (cookie) eklentisidir; kullanıcılarınız hangi çerezleri kabul edip hangilerini reddedeceğini seçebilir. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur. NPM paketi olarak mevcuttur ve Git deposu kod ve tema üzerinde her türlü özelleştirmeye olanak tanır.",
+            "Basit ve modern bir e-ticaret arayüzü örneğidir. Ürün listeleme, detay görüntüleme ve kullanıcı etkileşimleri için temel UI bileşenleri içerir. Responsive tasarım prensipleri kullanılarak geliştirilmiştir ve farklı ekran boyutlarında uyumlu çalışır. HTML, CSS ve Bootstrap kullanılarak oluşturulmuş, geliştirilebilir bir ön yüz projesidir.",
           ) ||
           text.includes(
-            "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+            "A simple and modern e-commerce interface example. It includes essential UI components such as product listing, product detail views, and basic user interactions. The layout is built using responsive design principles to ensure compatibility across different screen sizes. Developed with HTML, CSS, and Bootstrap as a customizable front-end project.",
           )
         );
       });

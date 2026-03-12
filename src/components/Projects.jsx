@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useLanguage } from "../hooks/useLanguage";
 import { useProjects } from "../lib/services/mockApiQuery";
 import Project from "./Project";
@@ -10,6 +11,11 @@ const Projects = () => {
     isError,
     error,
   } = useProjects(language);
+  useEffect(() => {
+    if (projects.length > 0) {
+      toast.success("Projects loaded!");
+    }
+  }, [projects]);
   return (
     <div id="projects" className="container">
       <h2 className="h2 my-10">{t("projects.title")}</h2>
@@ -24,7 +30,6 @@ const Projects = () => {
           ))
         )}
       </div>
-      {projects.length > 0 && toast("Projects loaded!", { type: "success" })}
     </div>
   );
 };
