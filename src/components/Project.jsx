@@ -1,4 +1,7 @@
+import { useLanguage } from "../hooks/useLanguage";
+
 const Project = ({ project }) => {
+  const { t } = useLanguage();
   return (
     <div>
       <article key={project.id}>
@@ -34,7 +37,7 @@ const Project = ({ project }) => {
                   className="card-link"
                   target="_blank"
                 >
-                  View Site
+                  {t("projects.buttons.view-site")}
                 </a>
               )}
             </div>

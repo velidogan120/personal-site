@@ -71,6 +71,9 @@
       "project3": {
         "name": "Project 3",
         "description": "Description of Project 3"
+      },
+      "buttons": {
+        "view-site": "View Site"
       }
     },
     "footer": {
@@ -152,6 +155,9 @@
       "project3": {
         "name": "Proje 3",
         "description": "Description of Proje 3"
+      },
+      "buttons": {
+        "view-site": "Siteyi Aç"
       }
     },
     "footer": {
