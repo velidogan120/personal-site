@@ -14,7 +14,6 @@ export const themeSlice = createSlice({
   },
 });
 
-// eslint-disable-next-line no-empty-pattern
 export const { toggleTheme } = themeSlice.actions;
 
 export default themeSlice.reducer;
