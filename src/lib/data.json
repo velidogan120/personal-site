@@ -55,7 +55,7 @@
       },
       "about": {
         "title": "About Me",
-        "paragraph": "Hello, I am Veli, living in Orhangazi, Bursa. I graduated from Namık Kemal University, Tekirdağ. Currently, I have learned HTML & CSS (Flexbox, Grid, SCSS, Bootstrap, TailwindCSS), JavaScript (AJAX, XMLHttpRequest, Callbacks, Async/Await), TypeScript, ReactJS (Redux Toolkit, ContextAPI, React Router Dom), NextJS. I plan to learn Java and Spring to improve my backend skills and achieve my Fullstack Developer goal. My latest project: Kanban: https://kanban-nextjs-lemon.vercel.app; React Spinners: https://lnkd.in/dkSpKNZx. Technologies used: SCSS, Redux Toolkit, Formik & Yup, React DnD Kit, Socket.IO, Firebase, AntDesign, NextJS (App-Router / TypeScript)."
+        "paragraph": "Hi, I’m Veli. I graduated from Tekirdağ Namık Kemal University Computer Engineering department on 19.03.2025. In my frontend development journey, which started with HTML, CSS (Flexbox, Grid, SCSS, Bootstrap, Tailwind CSS) and JavaScript (AJAX, TypeScript), I developed projects using React (Redux, Redux Toolkit, Context API, React Router) and Next.js. Currently, I continue to develop myself in the backend field by developing projects in the Java and Spring ecosystem with JWT-based microservice architecture."
       }
     },
     "projects": {
@@ -139,7 +139,7 @@
       },
       "about": {
         "title": "Hakkımda",
-        "paragraph": "Merhaba, ben Veli. Bursa, Orhangazi’de yaşıyorum. Tekirdağ Namık Kemal Üniversitesi Bilgisayar Mühendisliği bölümünden 19.03.2025 tarihinde mezun oldum. Hedefim Fullstack Developer olmak. Şu anda HTML & CSS (Flexbox, Grid, SCSS, Bootstrap, TailwindCSS), JavaScript (AJAX, XMLHttpRequest, Callback, Async-Await), TypeScript, ReactJS (Redux Toolkit, ContextAPI, React Router Dom), NextJS öğrendim. Java ve Spring öğrenerek backend bilgimi geliştirecek ve Fullstack Developer hedefime ulaşacağım. En güncel projem Kanban: https://kanban-nextjs-lemon.vercel.app; React Spinners: https://lnkd.in/dkSpKNZx. Kullanılan teknolojiler: SCSS, Redux Toolkit, Formik & Yup, React DnD Kit, Socket.IO, Firebase, AntDesign, NextJS (App-Router / TypeScript)."
+        "paragraph": "Merhaba, ben Veli.  Tekirdağ Namık Kemal Üniversitesi Bilgisayar Mühendisliği bölümünden 19.03.2025 tarihinde mezun oldum.  HTML, CSS (Flexbox, Grid, SCSS, Bootstrap, Tailwind CSS) ve JavaScript (AJAX, TypeScript) ile başladığım frontend geliştirme sürecinde React (Redux, Redux Toolkit, Context API, React Router) ve Next.js kullanarak projeler geliştirdim.  Şu anda Java ve Spring ekosisteminde JWT tabanlı mikroservis mimarisiyle projeler geliştirerek backend alanında da kendimi geliştirmeye devam ediyorum."
       }
     },
     "projects": {
