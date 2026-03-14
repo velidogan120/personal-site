@@ -1,18 +1,93 @@
-# React + Vite
+# 🌐 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website created to showcase my projects, skills, and contact information.
 
-Currently, two official plugins are available:
+This project serves as my **developer portfolio**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- About me section
+- Projects showcase
+- Skills section
+- Responsive design
+- Clean UI layout
+- Light / Dark Mode
+- TR/EN Translate
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🛠️ Technologies Used
 
-Note: This will impact Vite dev & build performances.
+- HTML
+- Vite-React
+- Redux Toolkit
+- TanStack Query
+- Axios
+- React Toastify
+- Cypress
+- Tailwindcss (Dark/Light)
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+personal-site
+ ├── index.html
+ ├── css
+ ├── js
+ ├── assets
+ └── README.md
+```
+
+## ⚙️ Installation
+
+Clone the repository
+
+```
+git clone https://github.com/velidogan120/personal-site.git
+```
+
+Install dependencies
+
+```
+npm install
+```
+
+Run the development server
+
+```
+npm run dev
+```
+
+Open in browser
+
+```
+http://localhost:5173
+```
+
+## ⚙️ Cypress Testing
+
+Open Terminal run command
+
+```
+npx cypress open
+```
+
+Select E2E Testing and All situations, Tests will be execution
+
+## 🎯 Purpose
+
+This project was created to:
+
+- Build a personal developer portfolio
+- Showcase projects
+- Practice responsive web design
+- Improve frontend development skills
+
+## 📸 Screenshots
+
+<p>
+  <img src="public/personal-site.png">
+</p>
+
+## 👨‍💻 Author
+
+Veli Doğan
+https://github.com/velidogan120
