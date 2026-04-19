@@ -16,7 +16,7 @@ const Summary = () => {
         <ul className="flex gap-4">
           <li>
             <a
-              href="mailto:velidogan120@gmail.com"
+              href="https://velidogan120.github.io/PersonalSite-SCSS/"
               className="button px-7 py-3 "
             >
               {t("buttons.hire-me")}
@@ -24,7 +24,7 @@ const Summary = () => {
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/veli-doğan-6a2887a2/"
+              href="https://www.linkedin.com/in/velidoğan/"
               className="button px-8 py-3 "
               target="_blank"
             >

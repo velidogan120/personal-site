@@ -48,7 +48,7 @@ const Header = () => {
             </a>
           </nav>
           <a
-            href="mailto:velidogan120@gmail.com"
+            href="https://velidogan120.github.io/PersonalSite-SCSS/"
             target="_blank"
             className="button px-8 py-3"
           >

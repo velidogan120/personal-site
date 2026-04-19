@@ -12,7 +12,10 @@ const Footer = () => {
           </p>
           <a className="flex gap-2 items-center">
             <FaHandPointRight />
-            <a href="mailto:velidogan120@gmail.com" className="text-rose-700 underline font-medium">
+            <a
+              href="mailto:velidogan120@gmail.com"
+              className="text-rose-700 underline font-medium"
+            >
               velidogan120@gmail.com
             </a>
           </a>
@@ -38,7 +41,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/veli-doğan-6a2887a2/"
+                href="https://www.linkedin.com/in/velidoğan/"
                 target="_blank"
                 className="text-sky-600"
               >
